@@ -19,7 +19,7 @@
 <body>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header main-shadow">
     <div class="header-wrap container">
       <nav class="header-nav">
         <a class="header-logo link" href="./index.html">Web<span class="header-logo-item">Studio</span></a>
@@ -47,10 +47,10 @@
   <main>
 
     <!-- Hero -->
-    <section class="hero main-shadow">
+    <section class="hero">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-btn" type="button">Order Service</button>
+        <button class="hero-btn" type="button" data-modal-open>Order Service</button>
       </div>
     </section>
 
@@ -367,6 +367,15 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="close-btn" data-modal-close>
+        <svg width="8" height="8" class="close-btn-icon">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
   <script src="./js/modal.js"></script>
 </body>
 
